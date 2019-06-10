@@ -1,4 +1,10 @@
-class CreateTrails.rb < ActiveRecord::Migration[5.2]
+class CreateTrails < ActiveRecord::Migration[5.2]
   def change
+    create_table :trails do |t|
+      t.string :name
+      t.string :length
+      t.string :difficulty
+      t.integer :mountain_id
+    end
   end
 end
