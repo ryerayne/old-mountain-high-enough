@@ -6,6 +6,7 @@ class CreateMountains < ActiveRecord::Migration[5.2]
       t.string :height
       t.string :prominence
       t.string :country
+      t.timestamps null: false
     end
   end
 end

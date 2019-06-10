@@ -5,6 +5,7 @@ class CreateTrails < ActiveRecord::Migration[5.2]
       t.string :length
       t.string :difficulty
       t.integer :mountain_id
+      t.timestamps null: false
     end
   end
 end
